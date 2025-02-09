@@ -22,7 +22,7 @@ public class CreateProjectCommandHandler : IRequestHandler<CreateProjectCommand,
 
     public async Task<Result<Guid>> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
     {
-        var project=new ProjectEntity(new Domain.ValueObjects.ProjectName(request.Name),new Domain.ValueObjects.ProjectDescription(request.Description),EnProjectStatus.Archived);
+        var project=new Domain.Aggregates.ProjectAggregate(new Domain.ValueObjects.ProjectName(request.Name),new Domain.ValueObjects.ProjectDescription(request.Description),EnProjectStatus.Archived);
         await projectRepository.AddAsync(project);
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return Result<Guid>.Success(project.Id);

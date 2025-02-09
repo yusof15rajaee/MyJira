@@ -1,6 +1,7 @@
-﻿using Project.Domain.Entities;
+﻿using Project.Domain.Aggregates;
+using Project.Domain.Entities;
 
 namespace Project.Domain.Repositories;
-public interface IProjectRepository:IGenericRepository<ProjectEntity>
+public interface IProjectRepository:IGenericRepository<ProjectAggregate>
 {
 }

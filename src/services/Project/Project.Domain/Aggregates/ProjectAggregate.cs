@@ -3,7 +3,7 @@ using Project.Domain.Entities;
 using Project.Domain.ValueObjects;
 
 namespace Project.Domain.Aggregates;
-public class ProjectAggregate
+public class ProjectAggregate:AggregateRoot
 {
     public ProjectEntity Project { get; private set; }
 
