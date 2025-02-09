@@ -480,6 +480,12 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "9.0.1"
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/9.0.1": {
         "type": "package",
         "dependencies": {
@@ -2172,6 +2178,31 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Tools/9.0.1": {
+      "sha512": "Yu0+5OInULF5PJX/ILZFWNT4ODBv4CSbS1TCXhkZYI6FxC7WguanhmCY9DL6U1R1YQ1tC38RspbxklmBBuk1SA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/9.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "docs/PACKAGE.md",
+        "microsoft.entityframeworkcore.tools.9.0.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net472/any/ef.exe",
+        "tools/net472/win-arm64/ef.exe",
+        "tools/net472/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
+      ]
+    },
     "Microsoft.Extensions.Caching.Abstractions/9.0.1": {
       "sha512": "Eghsg9SyIvq0c8x6cUpe71BbQoOmsytXxqw2+ZNiTnP8a8SBLKgEor1zZeWhC0588IbS2M0PP4gXGAd9qF862Q==",
       "type": "package",
@@ -3100,6 +3131,7 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.3",
       "Project.Domain >= 1.0.0",
       "RabbitMQ.Client >= 6.8.1",
@@ -3148,8 +3180,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      }
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -3160,6 +3193,12 @@
             "version": "[9.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
@@ -3193,10 +3232,6 @@
           {
             "name": "Microsoft.AspNetCore.App.Ref",
             "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.101, 9.0.101]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
