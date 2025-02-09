@@ -8,24 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\yraja\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ZP.Ogre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProject\\MyJira\\MyJira\\src\\services\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Joseph\\MyJira\\src\\services\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj",
       "projectName": "Project.Infrastructure",
-      "projectPath": "D:\\MyProject\\MyJira\\MyJira\\src\\services\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\yraja\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProject\\MyJira\\MyJira\\src\\services\\Project\\Project.Infrastructure\\obj\\",
+      "projectPath": "D:\\Joseph\\MyJira\\src\\services\\Project\\Project.Infrastructure\\Project.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ZP.Ogre\\.nuget\\packages\\",
+      "outputPath": "D:\\Joseph\\MyJira\\src\\services\\Project\\Project.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\yraja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ZP.Ogre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,9 +45,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "all"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -67,6 +62,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.101, 9.0.101]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

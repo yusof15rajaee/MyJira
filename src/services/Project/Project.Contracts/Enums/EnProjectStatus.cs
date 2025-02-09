@@ -1,4 +1,4 @@
-﻿namespace Project.Domain.Enums;
+﻿namespace Project.Contracts.Enums;
 
 public enum EnProjectStatus
 {

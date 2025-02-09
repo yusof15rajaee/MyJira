@@ -1,5 +1,5 @@
-﻿using Project.Domain.Entities;
-using Project.Domain.Enums;
+﻿using Project.Contracts.Enums;
+using Project.Domain.Entities;
 using Project.Domain.ValueObjects;
 
 namespace Project.Domain.Aggregates;

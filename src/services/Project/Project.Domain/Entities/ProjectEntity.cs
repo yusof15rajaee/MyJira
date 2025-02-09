@@ -1,7 +1,6 @@
-﻿using Project.Domain.Enums;
+﻿using Project.Contracts.Enums;
 using Project.Domain.Events;
 using Project.Domain.ValueObjects;
-using System.Security.Principal;
 
 namespace Project.Domain.Entities;
 public class ProjectEntity : BaseEntity
